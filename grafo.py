@@ -5,7 +5,6 @@ type Cidade = list[tuple[Distancia, str]]
 class Grafo:
     def __init__(self):
         self.cidades: dict[str, Cidade] = dict()
-
     def adicionarCidade(self, cidade: str):
         # se a cidade ja não foi adicionada antes
         if cidade not in self.cidades:
@@ -17,3 +16,9 @@ class Grafo:
             self.cidades[cidade].append((distancia, cidadeAConectar))
     def getCidade(self, cidade) -> Cidade:
         return self.cidades[cidade]
+    # retorna uma lista de todas as cidade o qual o grafo conecta
+    def getCidadesVizinhas(self, cidade: str) -> Cidade:
+        return self.cidades[cidade]
+    # retorna uma lista de todas as cidades
+    def getTodasAsCidades(self) -> list[str]:
+        return list(self.cidades.keys())
