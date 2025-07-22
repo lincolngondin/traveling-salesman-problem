@@ -1,0 +1,4 @@
+nomeCidade1 (distanciaParaCidade3;nomeCidade3) (distanciaParaCidade4;nomeCidade4)
+.
+.
+.
