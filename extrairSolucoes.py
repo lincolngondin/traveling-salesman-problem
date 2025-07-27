@@ -1,5 +1,6 @@
 from input import extrairGrafoDeArquivoEntrada
-from algorithms import nearestNeighbour, heldKarp, medir_tempo_execucao, calcular_distancia_total
+from algorithms import nearestNeighbour, heldKarp
+from calculos import medir_tempo_execucao, calcular_distancia_total
 
 def executar_testes_tsp():
     #aqui vamos definir o tamnaho dos grafosque serao testados, 
